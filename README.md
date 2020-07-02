@@ -11,7 +11,18 @@ The purpose of the code is to create a single longitudinal data set, in the wide
 ICPSR 36692 Version 1 has seven data sets. Each of them, except for the last one which is cross-sectional, is a longitudinal data set, in the wide format. For example, DS1 1998-2014 Longitudinal Data tracks information from 1998 to 2014 for individuals who responded in 1998. Note that there were new cohorts joining in the subsequent waves, so it is necessary to combine multiple data sets if you want to analyse the data of individuals who joined the survey at different time. This, however, creates an issue because the records of the same person can appear in multiple data sets. Simply concatenating different data sets will create a data set that is neither in the wide format (because there are multiple observations with the same ID) nor the long format. 
 
 ## Method
-To create a single data set in the wide format, I created a subset of each of the raw data. The subset criterion is that the earliest year of records in the data corresponds to the year when the selected individuals joined the survey. For instance, the records of those who joined the survey in 1998 are selected from DS1 1998-2014 Longitudinal Data. The records of those who joined the survey in 2002 are selected from DS1 2002-2014 Longitudinal Data. This can be achieved by the `merge` statement in SAS.
+To create a single data set in the wide format, I created a subset of each of the raw data. The subset criterion is that the earliest year of records in the data corresponds to the year when the selected individuals joined the survey. For instance, the records of those who joined the survey in 1998 are selected from DS1 1998-2014 Longitudinal Data. The records of those who joined the survey in 2002 are selected from DS1 2002-2014 Longitudinal Data. This can be achieved by the `merge` statement in SAS. The number of observations in the raw and the new data sets is shown below.
+
+| Data Name                                    | No. of Obs.        | No. of New Subjects                     |
+|----------------------------------------------|-------------------:|----------------------------------------:|
+| DS1 1998-2014 Longitudinal Data, Version   1 |             9,093  |                                  9,093  |
+| DS2 2000-2014 Longitudinal Data, Version   1 |          11,199    |                                  6,368  |
+| DS3 2002-2014 Longitudinal Data, Version   1 |          16,064    |                                  9,749  |
+| DS4 2005-2014 Longitudinal Data, Version   1 |          15,638    |                                  7,463  |
+| DS5 2008-2014 Longitudinal Data, Version   1 |          16,954    |                                  9,482  |
+| DS6 2011-2014 Longitudinal Data, Version   1 |             9,765  |                                  1,340  |
+| DS7 2014 Cross-Sectional Data, Version 1     |             7,192  |                                  1,125  |
+| Total                                        |          85,905    |                                44,620   |
 
 Before concatenating the selected data sets, some of the variable need to be renamed to avoid confusion in the final data set. The details can be found in the renaming code. Below is an overview of the naming convention.
 
