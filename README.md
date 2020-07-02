@@ -11,11 +11,15 @@ The purpose of the code is to create a single longitudinal data set, in the wide
 ICPSR 36692 Version 1 has seven data sets. Each of them, except for the last one which is cross-sectional, is a longitudinal data set, in the wide format. For example, DS1 1998-2014 Longitudinal Data tracks information from 1998 to 2014 for individuals who responded in 1998. Note that there were new cohorts joining in the subsequent waves, so it is necessary to combine multiple data sets if you want to analyse the data of individuals who joined the survey at different time. This, however, creates an issue because the records of the same person can appear in multiple data sets. Simply concatenating different data sets will create a data set that is neither in the wide format (because there are multiple observations with the same ID) nor the long format. 
 
 ## How to use the code
-Download the following.
+Download the data from https://www.icpsr.umich.edu/web/NACDA/studies/36692/versions/V1/datadocumentation. Click the download icon and choose `ASCII + SAS Setup`.
+
+Download the following code.
 * `main.sas`
 * `code_purge.sas`
 * `code_rename.sas`
 * the `setup` folder
+
+Unzip the file. The raw data and the setup code (in the `setup` folder) are stored inside the folders `DS0001`, `DS0002`, ..., `DS0007`. Move these folders to a new folder. The name of this new folder will be referred to in `main.sas`.
 
 The main body of the code is in `main.sas`. You need to specify the root directory. The other code files are included in `main.sas` via the `%INCLUDE` statement. 
 
