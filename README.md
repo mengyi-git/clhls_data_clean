@@ -12,6 +12,8 @@ ICPSR 36692 Version 1 has seven data sets. Each of them, except for the last one
 
 ## How to use the code
 Download the data from https://www.icpsr.umich.edu/web/NACDA/studies/36692/versions/V1/datadocumentation. Click the download icon and choose `ASCII + SAS Setup`.
+![image](https://user-images.githubusercontent.com/40621074/86422826-861f7380-bd21-11ea-947a-1d364389bd7f.png)
+
 
 Download the following code.
 * `main.sas`
