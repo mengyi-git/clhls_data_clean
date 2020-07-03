@@ -25,4 +25,5 @@ Unzip the file. The raw data and the setup code (in the `setup` folder) are stor
 
 The main body of the code is in `main.sas`. You need to specify the root directory. The other code files are included in `main.sas` via the `%INCLUDE` statement. 
 
+## Code documentation
 More details about the data cleaning procedure can be found [here](https://github.com/mengyi-git/clhls_data_clean/wiki).
