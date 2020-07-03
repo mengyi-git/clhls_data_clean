@@ -1,9 +1,10 @@
 # Chinese Longitudinal Healthy Longevity Survey (CLHLS)
 
 The data can be downloaded from the link in the following citation. 
-> The public-use data files in this collection are available for access by the general public. Access does not require affiliation with an ICPSR member institution.
 
 Zeng, Yi, Vaupel, James, Xiao, Zhenyu, Liu, Yuzhi, and Zhang, Chunyuan. Chinese Longitudinal Healthy Longevity Survey (CLHLS), 1998-2014. Inter-university Consortium for Political and Social Research [distributor], 2017-04-11. https://doi.org/10.3886/ICPSR36692.v1
+
+> The public-use data files in this collection are available for access by the general public. Access does not require affiliation with an ICPSR member institution.
 
 ## Introduction
 The purpose of the code is to create a single longitudinal data set, in the wide format, that contains the information of all subjects interviewed in all possible waves. The code also fixes some inconsistency in the variable names. 
