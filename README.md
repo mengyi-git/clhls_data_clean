@@ -15,19 +15,12 @@ ICPSR 36692 Version 1 has seven data sets. Each of them, except for the last one
 Download the data from https://www.icpsr.umich.edu/web/NACDA/studies/36692/versions/V1/datadocumentation. Click the download icon and choose `ASCII + SAS Setup`.
 ![image](https://user-images.githubusercontent.com/40621074/86422826-861f7380-bd21-11ea-947a-1d364389bd7f.png)
 
-
-Download the following code.
-* `main.sas`
-* `code_purge.sas`
-* `code_rename.sas`
-* the `setup` folder
-
 Unzip the file. The raw data and the setup code (in the `setup` folder) are stored inside the folders `DS0001`, `DS0002`, ..., `DS0007`. Move these folders to a new folder. The name of this new folder will be referred to in `main.sas`.
 
-The main body of the code is in `main.sas`. You need to specify the root directory. The other code files are included in `main.sas` via the `%INCLUDE` statement. 
+Download the code. The main body of the code is in `main.sas`. You need to specify the root directory. The other code files are included in `main.sas` via the `%INCLUDE` statement. 
 
 ## Questions and comments
-If you have trouble running the code or have better ideas to improve the code, [please log an issue](https://github.com/mengyi-git/clhls_data_clean/issues).
+If you have trouble running the code or have better ideas to improve the code, please [log an issue](https://github.com/mengyi-git/clhls_data_clean/issues).
 
 ## Learn more
 More details about the data cleaning procedure can be found [here](https://github.com/mengyi-git/clhls_data_clean/wiki).
